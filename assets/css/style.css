@@ -1001,6 +1001,19 @@ section .container {
   background-color: #F58549;
 }
 
+.portfolio-details .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px; /* Adjust the height as needed */
+}
+
+.portfolio-details .swiper-slide img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
