@@ -82,7 +82,7 @@
           <img src="assets/img/me.png" class="img-fluid" alt="">
         </div>
         <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-          <h3>Software Developer</h3>
+          <h3>Incoming Engineering Summer Analyst @Goldman Sachs</h3>
           <p class="fst-italic">
             
           </p>
@@ -313,13 +313,15 @@
                   <li>CMPU224 - Computer Organization</li>
                   <li>CMPU240 - Theory of Computation</li>
                   <li>CMPU241 - Analysis of Algorithms</li>
+                  <li>CMPU334 - Operating Systems (Spring 2024)</li>
+                  <li>CMPU331 - Compilers (Spring 2024)</li>
                 </ul> 
               </li>
             </ul>
           </div>
           <div class="resume-item">
             <h4>CodePath</h4>
-            <p><em> December 2023</em></p>
+            <p><em> September 2023</em></p>
             <ul>
               <li>Relevant Coursework: 
                 <ul>
@@ -335,6 +337,15 @@
         <div class="col-lg-6">
 
           <h3 class="resume-title">Professional Experience</h3>
+          <div class="resume-item">
+            <h4>Goldman Sachs</h4>
+            <h5>Incoming Engineering Summer Analyst</h5>
+            <br>
+            <p><em>Starting June 2024</em></p>
+            <ul>
+            </ul>
+            </p>
+          </div>
           <div class="resume-item">
             <h4>Vassar College Computer Science Department</h4>
             <h5>Computer Science Coach</h5>
@@ -540,9 +551,9 @@
         </div>
         <div class="my-3">
             <!-- Loading message -->
-            <div class="loading" style="display: none;">Loading</div>
+            <!-- <div class="loading" style="display: none;">Loading</div> -->
             <!-- Error message -->
-            <div class="error-message" style="display: none;"></div>
+            <!-- <div class="error-message" style="display: none;"></div> -->
             <!-- Success message -->
             <div class="sent-message" style="display: none;">Your message has been sent. Thank you!</div>
         </div>
@@ -557,12 +568,12 @@
         form.addEventListener('submit', async (e) => {
             e.preventDefault();
     
-            const loadingMessage = form.querySelector('.loading');
-            const errorMessage = form.querySelector('.error-message');
+            //const loadingMessage = form.querySelector('.loading');
+            //const errorMessage = form.querySelector('.error-message');
             const sentMessage = form.querySelector('.sent-message');
     
-            loadingMessage.style.display = 'block';
-            errorMessage.style.display = 'none';
+            //loadingMessage.style.display = 'block';
+            //errorMessage.style.display = 'none';
             sentMessage.style.display = 'none';
     
             const formData = new FormData(form);
@@ -581,14 +592,14 @@
                 if (response.ok) {
                     sentMessage.style.display = 'block';
                 } else {
-                    errorMessage.style.display = 'block';
-                    errorMessage.textContent = responseData.error;
+                    //errorMessage.style.display = 'block';
+                    //errorMessage.textContent = responseData.error;
                 }
             } catch (error) {
                 //errorMessage.style.display = 'block';
                 //errorMessage.textContent = 'An error occurred while sending the message.';
             } finally {
-                loadingMessage.style.display = 'none';
+                //loadingMessage.style.display = 'none';
             }
         });
     </script>
