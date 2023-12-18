@@ -1160,7 +1160,11 @@ section .container {
 .contact .php-email-form button[type=submit]:hover {
   background: #15bb62;
 }
-
+p i.ri-download-2-line {
+  vertical-align: middle; /* Align the icon vertically with text */
+  margin-left: 5px; /* Adjust the distance between the text and the icon */
+  transition: color 0.3s ease;
+}
 @keyframes animate-loading {
   0% {
     transform: rotate(0deg);
@@ -1202,3 +1206,4 @@ section .container {
 .credits a:hover {
   color: #fff;
 }
+
